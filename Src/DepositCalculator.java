@@ -28,7 +28,7 @@ public class DepositCalculator {
         action = scanner.nextInt();
         double depositBalance = 0;
         if (action == 1) {
-            depositBalance = countSimplePercent(amount, 0.06, period);
+            depositBalance = countSimplePercent(amount, 0.06, period); //0.06 можно вынести в глобальную пременную yearRate = 0.06
         } else if (action == 2) {
             depositBalance = countComplexPercent(amount, 0.06, period);
         }
